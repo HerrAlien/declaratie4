@@ -1,0 +1,168 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ro" xml:lang="ro">
+    <head>
+
+        <title>DECLARAȚIE PE PROPRIE RĂSPUNDERE</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta charset="UTF-8"/>
+
+        <meta name="theme-color" content="#ffffff" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff" />
+
+        <link rel="icon" type="image/png" href="icon.png" />
+        <link rel="apple-touch-icon" href="icon-144.png" />
+        <link rel="icon" type="image/png" href="icon-144.png">
+        <link rel="apple-touch-startup-image" type="image/png" href="icon-256.png" />
+
+        <link rel="manifest" type="text/json" href="manifest.json" />
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        
+    </head>
+    <body>
+
+<div id="buton-print"></div>
+
+<h1>DECLARAȚIE PE PROPRIE RĂSPUNDERE</h1>
+
+<table id="date-identificare-adresa">
+    <tr>
+        <td><h2><label for="nume">Nume, prenume:</label></h2></td>
+        <td><input id="nume" type="text"/></td>
+    </tr>
+    <tr>
+        <td><h2><label for="data-nasterii">Data naşterii:</label></h2></td>
+        <td><input id="data-nasterii" type="date"/>
+            <input id="vizualizare-data-nasterii-zi" type="text"/>
+            <input id="vizualizare-data-nasterii-luna" type="text"/>
+            <input id="vizualizare-data-nasterii-an" type="text"/>
+        </td>
+    </tr>
+    <tr>
+        <td><h2><label for="adresa">Adresa locuinței:</label></h2></td>
+        <td><textarea id="adresa"></textarea><br/>
+            <span>Se va completa adresa locuinței în care persoana locuiește în fapt, indiferent dacă este identică sau nu cu cea menționată în actul de identitate</span>
+        </td>
+    </tr>
+</table>
+
+<div id="div-locul-deplasarii">
+    <h2><label for="locul-deplasarii">Locul/locurile deplasării:</label></h2>
+    <textarea id="locul-deplasarii"></textarea><br/>
+    <span>Se vor menționa locurile în care persoana se deplasează, în ordinea în care aceasta intenționează să-și desfășoare traseul.</span>
+</div>
+
+<div id="motivul-deplasarii">
+<h2>Motivul deplasării:</h2>
+<table>
+<tr>
+    <td><input id="check-1" type="checkbox"></td>
+    <td><label for="check-1">1. interes profesional, inclusiv între locuință/gospodărie și locul/locurile de desfășurare a activității profesionale și înapoi 
+    </label></td>
+</tr>
+<tr>
+    <td><input  id="check-2" type="checkbox"></td>
+    <td><label for="check-2">2. asigurarea de bunuri care acoperă necesitățile de bază ale persoanelor și animalelor de companie/domestice
+    </label></td>
+</tr>
+<tr>
+    <td><input id="check-3"  type="checkbox"></td>
+    <td><label for="check-3">3. asistență medicală care nu poate fi amânată și nici realizată de la distanță 
+    </label></td>
+</tr>
+<tr>
+    <td><input  id="check-4" type="checkbox"></td>
+    <td><label for="check-4">4. motive justificate, precum îngrijirea/ însoțirea unui minor/copilului, asistența persoanelor vârstnice, bolnave sau cu dizabilități ori deces al unui membru de familie
+    </label></td>
+</tr>
+<tr>
+    <td><input id="check-5"  type="checkbox"></td>
+    <td><label for="check-5">5. activitate fizică individuală (cu excluderea oricăror activități sportive de echipă/ colective) sau pentru nevoile animalelor de companie/domestice, în apropierea locuinței
+    </label></td>
+</tr>
+<tr>
+    <td><input  id="check-6" type="checkbox"></td>
+    <td><label for="check-6">6. realizarea de activități agricole</label><br/>
+    <textarea id="activitati-agricole"></textarea>
+    </td>
+</tr>
+<tr>
+    <td><input  id="check-7" type="checkbox"></td>
+    <td><label for="check-7">7. donarea de sânge, la centrele de transfuzie sanguină
+    </label></td>
+</tr>
+<tr>
+    <td><input  id="check-8" type="checkbox"></td>
+    <td><label for="check-8">8. scopuri umanitare sau de voluntariat
+    </label></td>
+</tr>
+<tr>
+    <td><input  id="check-9" type="checkbox"></td>
+    <td><label for="check-9">9. comercializarea de produse agroalimentare (în cazul producătorilor agricoli)
+    </label></td>
+</tr>
+<tr>
+    <td><input  id="check-10" type="checkbox"></td>
+    <td><label for="check-10">10. asigurarea de bunuri necesare desfășurării activității profesionale.
+    </label></td>
+</tr>
+</table>
+<br/>
+Se va bifa doar motivul/motivele deplasării dintre cele prevăzute în listă, nefiind permise deplasări realizate invocând alte motive decât cele prevăzute în Ordonanța Militară nr. 3/2020. Subsemnatul cunosc prevederile art. 326 din Codul Penal cu privire la falsul în declarații și art. 352 din Codul Penal cu privire la zădărnicirea combaterii bolilor.
+</div>
+<table id="data-semnatura">
+    <tr>
+        <td><label>Data declarației: <input id="data-declaratie" type="date"></label>
+            <input id="vizualizare-data-declaratie" type="text"/>
+        </td>
+        <td><span>Semnătura: </span>
+            <input id="selectare-semnatura" type="button" value="Selecteaza imagine"/>
+            <input id="selectare-semnatura-fisier" type="file" value="Selecteaza imagine"/>
+            <img id="vizualizare-semnatura"/>
+        </td>
+    </tr>
+</table>
+<div id="footer">
+Persoanele care au împlinit vârsta de 65 de ani completează doar pentru motivele prevăzute în câmpurile 1-6, deplasarea fiind permisă zilnic doar în intervalul orar 11.00 – 13.00, iar în afara intervalului pentru motivele de la punctul 1 și punctul 6
+</div>
+<div id="version">
+</div>
+    </body>
+</html>
+<script>
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('serviceworker.js').then(function (registration) {
+        console.log('ServiceWorker registration successful with scope: ', registration.scope);
+    }, function (err) {
+        // registration failed :(
+        console.log('ServiceWorker registration failed: ', err);
+    });
+}
+
+var CACHE_PREFIX = 'Cache-for-declaratie2503';
+caches.keys().then(names => {
+    var versions = "v";
+    for (var i = 0; i < names.length; i++) {
+        var name = names[i];
+
+        if (!name.startsWith(CACHE_PREFIX)) {
+            continue;
+        }
+
+        var versionPos = name.lastIndexOf('v');
+        if (versionPos < 0) {
+            versionPos = name.lastIndexOf('-');
+        }
+        if (versionPos < 0) {
+            continue;
+        }
+        versions += name.substring(versionPos + 1) + ",";
+    }
+
+    versions = versions.substring(1, versions.length - 1);
+    var div = document.getElementById("version");
+    div.textContent = "version " + versions;
+});
+
+</script>
+<script type="text/JavaScript" language="JavaScript" src="code.js"></script>
