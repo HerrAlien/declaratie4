@@ -1,4 +1,4 @@
-h1
+h1, h4
 {
     text-align: center;
     width: 100%;
@@ -240,7 +240,7 @@ table
             #vizualizare-semnatura
             {
                 height: 27mm;
-                margin-left: 20mm;
+                margin-left: 0;
             }
 
             #data-semnatura > tbody > tr > td:nth-child(2) > span
@@ -267,6 +267,11 @@ table
             #footer
             {
                 page-break: avoid;
+            }
+
+            #data-semnatura > tbody > tr > td:nth-child(1) > span
+            {
+                display: block;
             }
 
 }

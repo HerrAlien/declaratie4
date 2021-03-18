@@ -15,8 +15,8 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>. */
 
 (function() {
-var CACHE_PREFIX = 'Cache-for-declaratie2503';
-var CACHE_VERSION = '7';
+var CACHE_PREFIX = 'Cache-for-declaratie-4';
+var CACHE_VERSION = '1';
 var CACHE_NAME = CACHE_PREFIX + '-' + CACHE_VERSION;
 
 var urlsToCache = [

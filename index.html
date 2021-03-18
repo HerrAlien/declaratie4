@@ -24,14 +24,15 @@
 <div id="buton-print"></div>
 
 <h1>DECLARAȚIE PE PROPRIE RĂSPUNDERE</h1>
+<h4>- Pentru perioada carantinării zonale -</h4>
 
 <table id="date-identificare-adresa">
     <tr>
-        <td><h2><label for="nume">Nume, prenume:</label></h2></td>
+        <td><h2><label for="nume">Subsemnata/subsemnatul:</label></h2></td>
         <td><input id="nume" type="text"/></td>
     </tr>
     <tr>
-        <td><h2><label for="data-nasterii">Data naşterii:</label></h2></td>
+        <td><h2><label for="data-nasterii">Născută/născut la data de </label></h2></td>
         <td><input id="data-nasterii" type="date"/>
             <input id="vizualizare-data-nasterii-zi" type="text"/>
             <input id="vizualizare-data-nasterii-luna" type="text"/>
@@ -39,92 +40,110 @@
         </td>
     </tr>
     <tr>
-        <td><h2><label for="adresa">Adresa locuinței:</label></h2></td>
-        <td><textarea id="adresa"></textarea><br/>
-            <span>Se va completa adresa locuinței în care persoana locuiește în fapt, indiferent dacă este identică sau nu cu cea menționată în actul de identitate</span>
+        <td><h2><label for="adresa">Având domiciliul:</label></h2></td>
+        <td><textarea id="adresa"></textarea>
         </td>
     </tr>
 </table>
-
-<div id="div-locul-deplasarii">
-    <h2><label for="locul-deplasarii">Locul/locurile deplasării:</label></h2>
-    <textarea id="locul-deplasarii"></textarea><br/>
-    <span>Se vor menționa locurile în care persoana se deplasează, în ordinea în care aceasta intenționează să-și desfășoare traseul.</span>
-</div>
 
 <div id="motivul-deplasarii">
 <h2>Motivul deplasării:</h2>
 <table>
 <tr>
     <td><input id="check-1" type="checkbox"></td>
-    <td><label for="check-1">1. interes profesional, inclusiv între locuință/gospodărie și locul/locurile de desfășurare a activității profesionale și înapoi 
+    <td><label for="check-1">deplasarea în interes profesional, inclusiv între locuință/gospodărie și locul/locurile de desfășurare a
+activității profesionale și înapoi
     </label></td>
 </tr>
 <tr>
     <td><input  id="check-2" type="checkbox"></td>
-    <td><label for="check-2">2. asigurarea de bunuri care acoperă necesitățile de bază ale persoanelor și animalelor de companie/domestice
+    <td><label for="check-2">deplasarea pentru asigurarea de bunuri care acoperă necesitățile de bază ale persoanelor și
+animalelor de companie/domestice, precum și bunuri necesare desfășurării activității profesionale;
     </label></td>
 </tr>
 <tr>
     <td><input id="check-3"  type="checkbox"></td>
-    <td><label for="check-3">3. asistență medicală care nu poate fi amânată și nici realizată de la distanță 
+    <td><label for="check-3">deplasarea pentru asistență medicală care nu poate fi amânată și nici realizată de la distanță; urgențe medicale;
     </label></td>
 </tr>
 <tr>
     <td><input  id="check-4" type="checkbox"></td>
-    <td><label for="check-4">4. motive justificate, precum îngrijirea/ însoțirea unui minor/copilului, asistența persoanelor vârstnice, bolnave sau cu dizabilități ori deces al unui membru de familie
+    <td><label for="check-4">deplasările scurte, în apropierea locuinței/gospodăriei, legate de activitatea fizică individuală a persoanelor (cu excluderea oricăror activități sportive de echipă), cât și pentru nevoile animalelor de companie/domestice;
     </label></td>
 </tr>
 <tr>
     <td><input id="check-5"  type="checkbox"></td>
-    <td><label for="check-5">5. activitate fizică individuală (cu excluderea oricăror activități sportive de echipă/ colective) sau pentru nevoile animalelor de companie/domestice, în apropierea locuinței
+    <td><label for="check-5">deplasarea în scopul donării de sânge, la centrele de transfuzie sanguină;
     </label></td>
 </tr>
 <tr>
     <td><input  id="check-6" type="checkbox"></td>
-    <td><label for="check-6">6. realizarea de activități agricole</label><br/>
-    <textarea id="activitati-agricole"></textarea>
+    <td><label for="check-6">deplasarea în scop umanitar sau de voluntariat;</label><br/>
     </td>
 </tr>
 <tr>
     <td><input  id="check-7" type="checkbox"></td>
-    <td><label for="check-7">7. donarea de sânge, la centrele de transfuzie sanguină
+    <td><label for="check-7">deplasarea pentru realizarea de activități agricole;
     </label></td>
 </tr>
 <tr>
     <td><input  id="check-8" type="checkbox"></td>
-    <td><label for="check-8">8. scopuri umanitare sau de voluntariat
+    <td><label for="check-8">deplasarea producătorilor agricoli pentru comercializarea de produse agroalimentare;
     </label></td>
 </tr>
 <tr>
     <td><input  id="check-9" type="checkbox"></td>
-    <td><label for="check-9">9. comercializarea de produse agroalimentare (în cazul producătorilor agricoli)
+    <td><label for="check-9">îngrijirea sau administrarea unei proprietăți din altă localitate; eliberarea de documente necesare pentru obținerea unor drepturi;
     </label></td>
 </tr>
 <tr>
     <td><input  id="check-10" type="checkbox"></td>
-    <td><label for="check-10">10. asigurarea de bunuri necesare desfășurării activității profesionale.
+    <td><label for="check-10">participare la programe sau proceduri în centrele de tratament;
+    </label></td>
+</tr>
+<tr>
+    <td><input  id="check-11" type="checkbox"></td>
+    <td><label for="check-11">pentru achiziția, service-ul, efectuarea ITP sau alte operațiuni de întreținere a vehiculelor, activități care nu pot fi efectuate în localitatea de domiciliu;
+    </label></td>
+</tr>
+<tr>
+    <td><input  id="check-12" type="checkbox"></td>
+    <td><label for="check-12">elevii care au domiciliul în zona carantinată și care urmează cursurile unor unități de învățământ din alte unități administrativ-teritoriale pentru care nu sunt dispuse măsuri de carantină zonală;
+    </label></td>
+</tr>
+<tr>
+    <td><input  id="check-13" type="checkbox"></td>
+    <td><label for="check-13">participarea la evenimente în familie (botez, cununie, inmormântare)
+    </label></td>
+</tr>
+<tr>
+    <td><input  id="check-14" type="checkbox"></td>
+    <td><label for="check-14">alte motive justificative precum: îngrijirea/însoțirea copiilor/membrilor de familie; îngrijirea unei rude/afin sau persoană aflată în întreținere, asistența persoanelor vârstnice, bolnave sau cu dizabilități ori deces al unui membru de familie;
     </label></td>
 </tr>
 </table>
+
+<div id="div-locul-deplasarii">
+    <h2><label for="locul-deplasarii">Adresa spre care se deplasează</label></h2>
+    <textarea id="locul-deplasarii"></textarea><br/>
+</div>
+
 <br/>
-Se va bifa doar motivul/motivele deplasării dintre cele prevăzute în listă, nefiind permise deplasări realizate invocând alte motive decât cele prevăzute în Ordonanța Militară nr. 3/2020. Subsemnatul cunosc prevederile art. 326 din Codul Penal cu privire la falsul în declarații și art. 352 din Codul Penal cu privire la zădărnicirea combaterii bolilor.
+<br/>
+Subsemnatul cunosc prevederile art. 326 din Codul Penal cu privire la falsul în declarații și art. 352 din Codul Penal cu privire la zădărnicirea combaterii bolilor.
 </div>
 <table id="data-semnatura">
     <tr>
-        <td><label>Data declarației: <input id="data-declaratie" type="date"></label>
-            <input id="vizualizare-data-declaratie" type="text"/>
-        </td>
         <td><span>Semnătura: </span>
             <input id="selectare-semnatura" type="button" value="Selecteaza imagine"/>
             <input id="selectare-semnatura-fisier" type="file" value="Selecteaza imagine"/>
             <img id="vizualizare-semnatura"/>
         </td>
+        <td><label>Data: <input id="data-declaratie" type="date"></label>
+            <input id="vizualizare-data-declaratie" type="text"/>
+        </td>
     </tr>
 </table>
-<div id="footer">
-Persoanele care au împlinit vârsta de 65 de ani completează doar pentru motivele prevăzute în câmpurile 1-6, deplasarea fiind permisă zilnic doar în intervalul orar 11.00 – 13.00, iar în afara intervalului pentru motivele de la punctul 1 și punctul 6
-</div>
 <div id="version">
 </div>
     </body>
